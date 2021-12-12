@@ -3,8 +3,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { TheFood } from './theFood/TheFood';
 import { TheSnake } from './theSnake/TheSnake';
 
-import './snake.css';
-
 const getRandomCoordinates = () => {
   let min = 1;
   let max = 98;
@@ -22,6 +20,24 @@ export function Snake() {
     [2, 0],
   ]);
   const [pause, setPause] = useState<boolean>(true);
+
+  const onGameOver = () => {
+    handleGameOverEffect();
+    setSnakeDots([
+      [0, 0],
+      [2, 0],
+    ]);
+    setDirection('RIGHT');
+  };
+
+  const handleGameOverEffect = () => {
+    setGameOverEffect(true);
+
+    setTimeout(() => {
+      setPause(!pause);
+      setGameOverEffect(false);
+    }, 1000);
+  };
 
   const checkIfOutOfBorders = () => {
     let head = snakeDots[snakeDots.length - 1];
@@ -86,7 +102,7 @@ export function Snake() {
     checkIfOutOfBorders();
     checkIfCollapsed();
     setTimeout(() => moveSnake(snakeDots, checkIfEat()), 200);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pause, snakeDots]);
 
   useEffect(() => {
@@ -120,26 +136,6 @@ export function Snake() {
       console.log('direction return', direction); // useEffect precedente
     };
   }, [direction, setDirection]);
-
-  
-
-  const onGameOver = () => {
-    handleGameOverEffect();
-    setSnakeDots([
-      [0, 0],
-      [2, 0],
-    ]);
-    setDirection('RIGHT');
-  };
-
-  const handleGameOverEffect = () => {
-    setGameOverEffect(true);
-    
-    setTimeout(() => {
-      setGameOverEffect(false);
-      setPause((p) => !p);      
-    }, 1000);    
-  };
 
   return (
     <>

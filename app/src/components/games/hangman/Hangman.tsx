@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 import randomWords from 'random-words';
 import { Button } from '@mui/material';
 
-import './hangman.css';
-
 export function Hangman() {
   const alphabet = ["A", "B", "C", "D", "E", "F", "G",
     "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",

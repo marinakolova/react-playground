@@ -2,8 +2,6 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Square } from './square/Square';
 
-import './tic-tac-toe.css';
-
 export function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
