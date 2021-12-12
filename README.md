@@ -6,7 +6,8 @@ React app for playing simple popular games like tic-tac-toe.
 - ... more coming soon
 
 ## :hammer_and_pick: Built With
-- [React](https://reactjs.org/)
+- [React](https://reactjs.org/) 
+- [TypeScript](https://www.typescriptlang.org/)
 - [MUI](https://mui.com/)
 
 ## :gear: Configurations
