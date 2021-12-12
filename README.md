@@ -1,2 +1,2 @@
 # react-playground
-React app for playing simple popular games like tic-tac-toe.
+:joystick: React app for playing simple popular games like tic-tac-toe.
