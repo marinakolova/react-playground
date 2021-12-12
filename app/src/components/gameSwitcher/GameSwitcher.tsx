@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
+import { Snake } from '../games/snake/Snake';
 import { TicTacToe } from '../games/ticTacToe/TicTacToe';
 import { NavBar } from './navBar/NavBar';
 
@@ -16,6 +17,7 @@ export function GameSwitcher(props: IGameSwitcherProps) {
         setSelected={setSelected}
       />
       {selected === 0 && <TicTacToe />}
+      {selected === 1 && <Snake />}
     </>
   );
 }

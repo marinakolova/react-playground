@@ -15,6 +15,7 @@ export function NavBar(props: INavBarProps) {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={props.selected} onChange={handleChange} centered>
           <Tab label="Tic-Tac-Toe" />
+          <Tab label="Snake" />
         </Tabs>
       </Box>
     </Box>
