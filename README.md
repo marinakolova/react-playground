@@ -3,6 +3,7 @@ React app for playing simple popular games like tic-tac-toe.
 
 ## :joystick: Games Included
 - Tic-Tac-Toe
+- Snake
 - ... more coming soon
 
 ## :hammer_and_pick: Built With
@@ -25,3 +26,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 Used help from:
 - [How to Build Tic Tac Toe with React Hooks](https://medium.com/@shifrb/how-to-build-tic-tac-toe-with-react-hooks-ca37f6040022) by Shif Ben Avraham
+- [Snake game with React JS — Hooks](https://medium.com/edonec/snake-game-with-react-js-hooks-600a742e70b7) by Issam Eddine Bouhoush
