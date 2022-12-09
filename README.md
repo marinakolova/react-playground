@@ -2,13 +2,12 @@
 React app for playing simple popular games like tic-tac-toe, snake etc. Hosted on GitHub Pages.
 
 ## :link: GitHub Pages Link
-:point_right:  https://marinakolova.github.io/react-playground
+:point_right:  https://marinakolova.github.io/react-playground/
 
 ## :joystick: Games Included
 - Tic-Tac-Toe
 - Snake
 - Hangman
-- ... more coming soon
 
 ## :hammer_and_pick: Built With
 - [React](https://reactjs.org/) 
@@ -18,8 +17,6 @@ React app for playing simple popular games like tic-tac-toe, snake etc. Hosted o
 ## :gear: Configurations
 - Run `npm install` in the `app` directory.
 - Run `npm start` in the `app` directory.
-- Choose a game.
-- Enjoy.
 
 ## :eyes: Screenshots
 ![screenshot1](https://github.com/marinakolova/react-playground/blob/main/screenshot1.png)
