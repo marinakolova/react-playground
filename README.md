@@ -1,7 +1,7 @@
 # react-playground
-React app for playing simple popular games like tic-tac-toe, snake etc.
+React app for playing simple popular games like tic-tac-toe, snake etc. Hosted on GitHub Pages.
 
-### :link: GitHub Pages Link: 
+## :link: GitHub Pages Link
 :point_right:  https://marinakolova.github.io/react-playground
 
 ## :joystick: Games Included
